@@ -11,7 +11,7 @@ export default function Page() {
   const apiKey = process.env.NEXT_PUBLIC_API_KEY;
   console.log("apiKey: ", apiKey);
 
-  const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7&aqi=yes&alerts=yes`;
+  const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7&aqi=yes&alerts=yes`;
 
   const fetchData = async (e) => {
     e.preventDefault();
